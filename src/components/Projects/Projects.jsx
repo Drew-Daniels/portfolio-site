@@ -16,14 +16,20 @@ import CVProjectGif from '../../images/gifs/cv-project.gif';
 function Projects(props) {
     // TODO: Add in the ability to create project descriptions, and tech stack used?
     class Project {
-        constructor(name, gif) {
+        constructor(name, gif, techStack=[], description='') {
             this.name = name;
             this.gif = gif;
+            this.techStack = techStack;
+            this.description = description;
         }
     }
 
     const [projects, setProjects] = useState([
-        new Project('Memory Card', MemoryCardGif),
+        new Project(
+            'Memory Card', 
+            MemoryCardGif,
+            ['react', 'javascript', 'html'],
+            'Memory Card game created with React'),
         new Project('Battleship', BattleshipGif),
         new Project('Etch-a-Sketch', EtchASketchGif),
         new Project('Tic Tac Toe', TicTacToeGif),
@@ -34,6 +40,7 @@ function Projects(props) {
 
     return (
         <div id='projects'>
+            <h2 className='projects-header'>Projects</h2>
             <ul className='project-list'>
                 {projects.map(function(project, i) {
                     return (

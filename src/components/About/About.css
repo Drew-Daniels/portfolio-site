@@ -1,0 +1,8 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+.about-header {
+    font-size: 3em;
+}

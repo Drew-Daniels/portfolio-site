@@ -1,10 +1,14 @@
 import './Footer.css';
 
+import { RiArrowUpSLine as ScrollUpIcon } from 'react-icons/ri';
+
 function Footer(props) {
 
     return (
         <footer className='footer'>
-            Footer will go here
+            <a href="#home">
+                <ScrollUpIcon />
+            </a>
         </footer>
     )
 }

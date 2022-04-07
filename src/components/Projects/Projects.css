@@ -1,3 +1,9 @@
+#projects {
+    background-color: gray;
+}
+.projects-header {
+    font-size: 3em;
+}
 .project {
     border: 1px solid black;
     display: flex;

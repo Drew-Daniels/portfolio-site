@@ -23,5 +23,6 @@
     margin-left: 1em;
 }
 #home {
-    height: 500em;
+    height: 100em;
+    background-color: yellow;
 }

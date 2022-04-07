@@ -1,3 +1,29 @@
+#skills {
+    background-color: blue;
+    display: flex;
+}
+.skills-subsection {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+.skills-header {
+    font-size: 3em;
+}
+.skills-subsection-header {
+    font-size: 2em;
+    text-align: center;
+}
+.skills-subsection-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 25%;
+}
+.skills-list {
+    display: flex;
+}
 .skill {
 
 }

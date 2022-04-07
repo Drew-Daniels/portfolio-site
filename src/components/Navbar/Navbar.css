@@ -2,6 +2,8 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
+    padding: 1em 0;
+    background-color: blue;
 }
 .navbar-list {
     display: flex;
@@ -10,4 +12,13 @@
 }
 .navbar-list-item {
     border: 1px solid gray;
+    padding: 1em;
+}
+.navbar-list-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-icon {
+    margin-right: 1em;
 }

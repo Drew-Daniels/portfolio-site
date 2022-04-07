@@ -33,16 +33,37 @@ function Skills(props) {
 
     return (
         <div id='skills'>
-            <ul className='skills-list'>
-                {skills.map((skill, i) => {
-                    const {name, icon} = skill;
-                    return (
-                        <li key={i} className='skill'>
-                            <img src={icon} alt={name + ' icon'} className='skill-image' />
-                        </li>
-                    )
-                })}
-            </ul>
+            <h2 className='skills-header'>Skills</h2>
+            <div className='skills-subsection languages'>
+                <h3 className='skills-subsection-header languages-header'>Languages</h3>
+                <ul className='skills-subsection-list languages-list'>
+                    {skills.map((skill, i) => {
+                        if (skill.isLanguage) {
+                            const {name, icon} = skill;
+                            return (
+                                <li key={i} className='skill'>
+                                    <img src={icon} alt={name + ' icon'} className='skill-image' />
+                                </li>
+                            )
+                        }
+                    })}
+                </ul>
+            </div>
+            <div className='skills-subsection frameworks-and-tools'>
+                <h3 className='skills-subsection-header'>Frameworks/Tools</h3>
+                <ul className='skills-subsection-list languages-list'>
+                        {skills.map((skill, i) => {
+                            if (!skill.isLanguage) {
+                                const {name, icon} = skill;
+                                return (
+                                    <li key={i} className='skill'>
+                                        <img src={icon} alt={name + ' icon'} className='skill-image' />
+                                    </li>
+                                )
+                            }
+                        })}
+                    </ul>
+            </div>
         </div>
     )
 }
