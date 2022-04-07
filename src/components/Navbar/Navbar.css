@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.navbar-list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.navbar-list-item {
+    border: 1px solid gray;
+}

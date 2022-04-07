@@ -3,13 +3,25 @@
     align-items: center;
     justify-content: center;
     width: 10em;
+    border: 1px solid #ffad41;
+    border-radius: .25em;
 }
 
 .headshot {
     width: 100%;
     border-radius: .25em;
 }
-
+.home-header {
+    font-size: 2em;
+}
+.home-header::before {
+    content: '<';
+    margin-right: 1em;
+}
+.home-header::after {
+    content: '>';
+    margin-left: 1em;
+}
 #home {
     height: 500em;
 }

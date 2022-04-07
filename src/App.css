@@ -1,3 +1,8 @@
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: #ffad41;
+}
+a {
+  text-decoration: none;
+  color: #ffad41;
 }
