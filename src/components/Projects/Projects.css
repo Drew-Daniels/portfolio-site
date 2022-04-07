@@ -1,0 +1,15 @@
+.project {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-gif-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+}
+.project-gif {
+    height: 100%;
+}

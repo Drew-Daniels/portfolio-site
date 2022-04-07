@@ -1,8 +1,10 @@
+import './Footer.css';
+
 function Footer(props) {
 
     return (
-        <footer>
-
+        <footer className='footer'>
+            Footer will go here
         </footer>
     )
 }

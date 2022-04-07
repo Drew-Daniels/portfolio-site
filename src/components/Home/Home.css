@@ -1,0 +1,15 @@
+.headshot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+}
+
+.headshot {
+    width: 100%;
+    border-radius: .25em;
+}
+
+#home {
+    height: 500em;
+}
