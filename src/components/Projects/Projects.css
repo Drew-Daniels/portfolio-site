@@ -1,5 +1,9 @@
 #projects {
     background-color: gray;
+    scroll-snap-type: y mandatory;
+}
+#projects .project {
+    scroll-snap-align: start;
 }
 .projects-header {
     font-size: 3em;
@@ -9,12 +13,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20em 0;
+}
+.project-header {
+    font-size: 2em;
 }
 .project-gif-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5em;
+    height: 30em;
 }
 .project-gif {
     height: 100%;
