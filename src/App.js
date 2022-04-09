@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 // import styling
 import './Reset.css';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import pictures
 import logo from './logo.svg';
