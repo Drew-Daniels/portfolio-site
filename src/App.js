@@ -18,15 +18,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import pictures
 import logo from './logo.svg';
 
-
 function App() {
 
   const [title, setTitle] = useState('full stack developer');
 
 
   return (
-    <div className="App">
-      <Header />
+    <div className="app">
+      <Header/>
       <Home title={title} />
       <About />
       <Skills/>

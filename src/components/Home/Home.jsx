@@ -7,7 +7,6 @@ function Home(props) {
     return (
         <div id='home'>
             <h1 className='home-header'>drew daniels | {title}</h1>
-
         </div>
     )
 }

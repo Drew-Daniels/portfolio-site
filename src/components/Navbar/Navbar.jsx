@@ -47,9 +47,9 @@ function Navy(props) {
         //         })}
         //     </ul>
         // </nav>
-        <Navbar bg='dark' expand='lg'>
+        <Navbar fixed='top' bg='light' expand='lg'>
             <Container>
-                <Navbar.Brand href='#home'>
+                <Navbar.Brand href='#home' className='d-flex align-items-center'>
                     <img
                         src={myLogo}
                         alt="Drew Daniels' portfolio website logo"
