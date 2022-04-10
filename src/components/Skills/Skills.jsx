@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Skills.css';
 
+import { Container, CardGroup, Card } from 'react-bootstrap';
+
 class Skill {
     constructor(name, icon, isLanguage=true) {
       this.name = name;
@@ -31,40 +33,48 @@ function Skills(props) {
         new Skill('Heroku', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg', false),
     ]);
 
+    const languages = skills.filter(skill => skill.isLanguage === true);
+
+    const tools = skills.filter(skill => skill.isLanguage === false);
+
     return (
-        <div id='skills'>
-            <h2 className='skills-header'>Skills</h2>
-            <div className='skills-subsection languages'>
-                <h3 className='skills-subsection-header languages-header'>Languages</h3>
-                <ul className='skills-subsection-list languages-list'>
-                    {skills.map((skill, i) => {
-                        if (skill.isLanguage) {
-                            const {name, icon} = skill;
-                            return (
-                                <li key={i} className='skill'>
-                                    <img src={icon} alt={name + ' icon'} className='skill-image' />
-                                </li>
-                            )
-                        }
-                    })}
-                </ul>
-            </div>
-            <div className='skills-subsection frameworks-and-tools'>
-                <h3 className='skills-subsection-header'>Frameworks/Tools</h3>
-                <ul className='skills-subsection-list languages-list'>
-                        {skills.map((skill, i) => {
-                            if (!skill.isLanguage) {
-                                const {name, icon} = skill;
-                                return (
-                                    <li key={i} className='skill'>
-                                        <img src={icon} alt={name + ' icon'} className='skill-image' />
-                                    </li>
-                                )
-                            }
-                        })}
-                    </ul>
-            </div>
-        </div>
+        <Container id='skills'>
+            <Card>
+                <Card.Header as='h2'>Skills</Card.Header>
+                <CardGroup>
+                    <Card>
+                        <Card.Header as='h3'>Languages</Card.Header>
+                        <Card.Body>
+                            <ul className='skills-subsection-list languages-list'>
+                                {languages.map((language, i) => {
+                                    const {name, icon} = language;
+                                    return (
+                                        <li key={i} className='skill'>
+                                            <img src={icon} alt={name + ' icon'} className='skill-image' />
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </Card.Body>
+                    </Card>
+                    <Card>
+                        <Card.Header as='h3'>Frameworks{" & "}Tools</Card.Header>
+                        <Card.Body>
+                            <ul className='skills-subsection-list languages-list'>
+                                {tools.map((tool, i) => {
+                                    const {name, icon} = tool;
+                                    return (
+                                        <li key={i} className='skill'>
+                                            <img src={icon} alt={name + ' icon'} className='skill-image' />
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </Card.Body>
+                    </Card>
+                </CardGroup>
+            </Card>
+        </Container>
     )
 }
 

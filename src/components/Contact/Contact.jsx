@@ -26,7 +26,7 @@ function Contact() {
                     <Form.Label visuallyHidden>Message</Form.Label>
                     <Form.Control as='textarea' rows={3} placeholder='Type message' />
                 </Form.Group>
-                <Button type='submit'>Submit Form</Button>
+                <Button type='submit'>Send</Button>
             </Form>
         </Container>
         

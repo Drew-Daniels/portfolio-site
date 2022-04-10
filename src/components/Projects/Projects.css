@@ -1,19 +1,9 @@
 #projects {
-    background-color: gray;
     scroll-snap-type: y mandatory;
+    padding-top: 5em;
 }
 #projects .project {
     scroll-snap-align: start;
-}
-.projects-header {
-    font-size: 3em;
-}
-.project {
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20em 0;
 }
 .project-header {
     font-size: 2em;

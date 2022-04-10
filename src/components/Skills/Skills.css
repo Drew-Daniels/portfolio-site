@@ -1,6 +1,5 @@
 #skills {
-    background-color: blue;
-    display: flex;
+    padding-top: 5em;
 }
 .skills-subsection {
     flex: 1 1 50%;
