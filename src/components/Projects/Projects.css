@@ -8,13 +8,6 @@
 .project-header {
     font-size: 2em;
 }
-.project-gif-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 30em;
-    padding-bottom: 1em;
-}
 .project-gif {
-    height: 100%;
+    padding: 1em 0;
 }

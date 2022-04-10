@@ -5,7 +5,7 @@ function Header(props) {
     const {sections} = props;
 
     return (
-        <header className='header'>
+        <header>
             <Navbar sections={sections}/>
         </header>
     )

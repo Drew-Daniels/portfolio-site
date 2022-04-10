@@ -12,6 +12,7 @@ import TicTacToeGif from '../../images/gifs/tic-tac-toe.gif';
 import TodoTitanGif from '../../images/gifs/todo-titan.gif';
 import WeatherAppGif from '../../images/gifs/weather-app.gif';
 import CVProjectGif from '../../images/gifs/cv-project.gif';
+import CalculatorGif from '../../images/gifs/calculator.gif';
 
 import { Container, Card, Badge, Button } from 'react-bootstrap';
 
@@ -70,8 +71,8 @@ function Projects(props) {
             [
                 'Etch-a-Sketch description here',
             ],
-            'https://github.com/Drew-Daniels/etch-a-sketch',
             'https://drew-daniels.github.io/etch-a-sketch/',
+            'https://github.com/Drew-Daniels/etch-a-sketch',
         ),
         new Project(
             'Tic Tac Toe',
@@ -135,7 +136,21 @@ function Projects(props) {
             ],
             'https://drew-daniels.github.io/cv-project-hooks/',
             'https://github.com/Drew-Daniels/cv-project-hooks',
-        )
+        ),
+        new Project(
+            'Calculator',
+            CalculatorGif,
+            [
+                'html',
+                'css',
+                'javascript',
+            ],
+            [
+                'Calculator App',
+            ],
+            'https://drew-daniels.github.io/calculator/',
+            'https://github.com/Drew-Daniels/calculator',
+        ),
     ])
 
     const headerStyles = {
