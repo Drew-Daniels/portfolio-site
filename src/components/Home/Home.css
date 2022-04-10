@@ -12,15 +12,9 @@
     border-radius: .25em;
 }
 .home-header {
-    font-size: 2em;
-}
-.home-header::before {
-    content: '<';
-    margin-right: 1em;
-}
-.home-header::after {
-    content: '>';
-    margin-left: 1em;
+    font-size: 3em;
+    color: #ffad41;
+    font-weight: 100;
 }
 #home {
 	background-image: url('../../images/pictures/home-background.jpg');
@@ -29,6 +23,8 @@
 	background-repeat: no-repeat;
 	height: 50em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 6em;
 }

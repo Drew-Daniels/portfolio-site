@@ -3,32 +3,11 @@ import { useState } from 'react';
 import { IconContext } from 'react-icons';
 
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
-// import logos
-import { AiFillHome as homeIcon } from 'react-icons/ai';
-import { BsInfoLg as aboutIcon } from 'react-icons/bs';
-import { FaHammer as skillsIcon } from 'react-icons/fa';
-import { BsCode as projectsIcon } from 'react-icons/bs';
-import { IoMailSharp as contactIcon } from 'react-icons/io5';
-
 import myLogo from '../../images/icons/double-right-brackets.svg';
-
-class Section {
-    constructor(name, icon) {
-      this.name = name;
-      this.icon = icon;
-    }
-  }
 
 function CustomNav(props) {
 
-    const [sections, setSections] = useState([
-        new Section('home', homeIcon),
-        new Section('about', aboutIcon),
-        new Section('skills', skillsIcon),
-        new Section('projects', projectsIcon),
-        new Section('contact', contactIcon),
-      ])
+    const {sections} = props;
 
     return (
         <Navbar fixed='top' bg='light' expand='lg'>
@@ -41,7 +20,7 @@ function CustomNav(props) {
                         height="50"
                         className='nav-brand-image'
                     />
-                    <span className='nav-brand-name'>Drew Daniels</span>
+                    <span className='nav-brand-name'>drew daniels</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>

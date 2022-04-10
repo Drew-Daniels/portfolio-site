@@ -4,12 +4,17 @@ import { Container, Card, Image } from 'react-bootstrap';
 
 function About(props) {
 
+    const imageStyles = {
+        marginRight: '1em',
+        border: '3px solid #ffad41',
+    }
+
     return (
         <Container id='about'>
             <Card>
                 <Card.Header as='h2'>
-                    <Image src={Headshot} thumbnail roundedCircle height={100} width={100} style={{marginRight: '1em'}}/>
-                    <span>About Me</span>
+                    <Image src={Headshot} thumbnail roundedCircle height={100} width={100} style={imageStyles}/>
+                    <span>About me</span>
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>Section 1</Card.Title>

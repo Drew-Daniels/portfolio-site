@@ -2,12 +2,21 @@ import './Contact.css';
 import { Container, Card, Form, Row, Col, Button } from 'react-bootstrap';
 import { IoIosSend as SendIcon} from 'react-icons/io';
 
-function Contact() {
+function Contact(props) {
+
+    const {icon} = props;
+
+    const headerStyles = {
+        marginLeft: '1em'
+    }
 
     return (
         <Container id='contact'>
             <Card>
-                <Card.Header as='h2'>Contact Me</Card.Header>
+                <Card.Header as='h2'>
+                    {icon()}
+                    <span style={headerStyles}>Contact me</span>
+                </Card.Header>
                 <Card.Body>
                     <Form>
                         <Row>
@@ -28,14 +37,13 @@ function Contact() {
                             <Form.Label visuallyHidden>Message</Form.Label>
                             <Form.Control as='textarea' rows={3} placeholder='Type message' />
                         </Form.Group>
-                        <Button type='submit'>
+                        <Button variant='warning' type='submit'>
                             <span>Send</span>
                             <SendIcon style={{marginLeft: '.25em'}}/>
                         </Button>
                     </Form>
                 </Card.Body>
             </Card>
-
         </Container>
         
     )

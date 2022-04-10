@@ -13,6 +13,8 @@ class Skill {
 
 function Skills(props) {
 
+    const {icon} = props;
+
     const [skills, setSkills] = useState([
         new Skill('JavaScript', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'),
         new Skill('HTML', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'),
@@ -32,15 +34,20 @@ function Skills(props) {
         new Skill('Express', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg', false),
         new Skill('Heroku', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg', false),
     ]);
-
     const languages = skills.filter(skill => skill.isLanguage === true);
-
     const tools = skills.filter(skill => skill.isLanguage === false);
+
+    const headerStyles = {
+        marginLeft: '1em'
+    }
 
     return (
         <Container id='skills'>
             <Card>
-                <Card.Header as='h2'>Skills</Card.Header>
+                <Card.Header as='h2'>
+                    {icon()}
+                    <span style={headerStyles}>Skills </span>
+                </Card.Header>
                 <CardGroup>
                     <Card>
                         <Card.Header as='h3'>Languages</Card.Header>
@@ -58,7 +65,7 @@ function Skills(props) {
                         </Card.Body>
                     </Card>
                     <Card>
-                        <Card.Header as='h3'>Frameworks{" & "}Tools</Card.Header>
+                        <Card.Header as='h3'>Frameworks{" & "}tools</Card.Header>
                         <Card.Body>
                             <ul className='skills-subsection-list languages-list'>
                                 {tools.map((tool, i) => {

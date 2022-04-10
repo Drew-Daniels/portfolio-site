@@ -3,7 +3,6 @@
     flex-grow: 1;
     justify-content: space-around;
     padding: 1em 0;
-    background-color: blue;
 }
 .navbar-list {
     display: flex;
@@ -11,7 +10,6 @@
     justify-content: space-around;
 }
 .navbar-list-item {
-    border: 1px solid gray;
     padding: 1em;
 }
 .navbar-list-item-link {

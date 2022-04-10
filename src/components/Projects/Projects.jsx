@@ -16,6 +16,9 @@ import CVProjectGif from '../../images/gifs/cv-project.gif';
 import { Container, Card, Badge, Button } from 'react-bootstrap';
 
 function Projects(props) {
+
+    const {icon} = props;
+
     class Project {
         constructor(name, gif, techStack=[], blurbs=[], liveURL, sourceURL) {
             this.name = name;
@@ -132,17 +135,24 @@ function Projects(props) {
         )
     ])
 
+    const headerStyles = {
+        marginLeft: '1em'
+    }
+
     return (
         <Container id='projects'>
             <Card>
-                <Card.Header as='h2'>Projects</Card.Header>
+                <Card.Header as='h2'>
+                    {icon()}
+                    <span style={headerStyles}>Projects</span>
+                </Card.Header>
                 <Card.Body>
                     <ul className='project-list'>
                         {projects.map(function(project, i) {
                             return (
                                 <li key={i} className='project'>
                                     <Card>
-                                        <Card.Header className='project-header'>{project.name}</Card.Header>
+                                        <Card.Header as='h3' className='project-header'>{project.name}</Card.Header>
                                         <Card.Body>
                                             <ul>
                                                 {project.blurbs.map((blurb, i) => {
@@ -154,14 +164,12 @@ function Projects(props) {
                                                     return (<li key={i}><Badge pill bg='warning'>{stackItem}</Badge></li>)
                                                 })}
                                             </ul>
-                                            <Container className='project-gif-container'>
-                                                <img src={project.gif} alt={project.name + ' gif'} className='project-gif' />
-                                            </Container>
+                                            <Card.Img src={project.gif} alt={project.name + ' gif'} className='project-gif' />
                                             <Button variant='link' href={project.liveURL} target='_blank'>
-                                                <span>Live</span>
+                                                <span>live</span>
                                             </Button>
                                             <Button variant='link' href={project.sourceURL} target='_blank'>
-                                                <span>Source</span>
+                                                <span>source code</span>
                                             </Button>
                                         </Card.Body>
                                     </Card>
