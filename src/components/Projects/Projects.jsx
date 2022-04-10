@@ -99,7 +99,8 @@ function Projects(props) {
                 'localstorage-api',
             ],
             [
-                'Todo app description here',
+                'Made use of LocalStorage API to store and retrieve user-specific projects, to-dos, and tasks created from the UI on the client-side - ensuring speed and scalability for users.',
+                'UI on the client-side - ensuring speed and scalability for users.'
             ],
             'https://drew-daniels.github.io/todo_titan/',
             'https://github.com/Drew-Daniels/todo_titan',
@@ -112,7 +113,8 @@ function Projects(props) {
                 'openweathermap-api',
             ],
             [
-                'Weather app description here',
+                'Employed Webpack to dynamically generate JavaScript code used to fetch updated daily weather metrics for any city',
+                'JSON data obtained from the OpenWeather REST API and displayed in a sleek UI'
             ],
             'https://drew-daniels.github.io/weather_app/',
             'https://github.com/Drew-Daniels/weather_app',
@@ -128,7 +130,8 @@ function Projects(props) {
                 'webpack',
             ],
             [
-                'CV Application description here',
+                'Implemented React hooks to update state in response to user inputs.',
+                'Used git and GitHub Pages for continuous integration and deployment (CI/CD)'
             ],
             'https://drew-daniels.github.io/cv-project-hooks/',
             'https://github.com/Drew-Daniels/cv-project-hooks',
