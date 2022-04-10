@@ -145,13 +145,13 @@ function Projects(props) {
                                         <Card.Header className='project-header'>{project.name}</Card.Header>
                                         <Card.Body>
                                             <ul>
-                                                {project.blurbs.map(blurb => {
-                                                        return (<li><Card.Text>{blurb}</Card.Text></li>)
+                                                {project.blurbs.map((blurb, i) => {
+                                                        return (<li key={i}><Card.Text>{blurb}</Card.Text></li>)
                                                 })}
                                             </ul>
                                             <ul>
                                                 {project.techStack.map((stackItem, i) => {
-                                                    return (<li><Badge pill bg='warning' key={i}>{stackItem}</Badge></li>)
+                                                    return (<li key={i}><Badge pill bg='warning'>{stackItem}</Badge></li>)
                                                 })}
                                             </ul>
                                             <Container className='project-gif-container'>
