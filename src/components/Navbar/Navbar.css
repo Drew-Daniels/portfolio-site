@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: center;
 }
+.nav-icon {
+    margin-right: .25em;
+}
 .section-icon {
     margin-right: 1em;
 }

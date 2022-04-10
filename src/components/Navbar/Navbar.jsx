@@ -20,7 +20,7 @@ class Section {
     }
   }
 
-function Navy(props) {
+function CustomNav(props) {
 
     const [sections, setSections] = useState([
         new Section('home', homeIcon),
@@ -31,22 +31,6 @@ function Navy(props) {
       ])
 
     return (
-        // <nav className='navbar'>
-        //     <ul className='navbar-list'>
-                // {sections.map((section, i) => {
-                //     return (
-                //         <li key={i} className='navbar-list-item'>
-                //             <a href={"#" + section.name + ""} className='navbar-list-item-link'>
-                //                 <IconContext.Provider value={{ size: '2em' }}>
-                //                     <section.icon className='section-icon' />
-                //                 </IconContext.Provider>
-                //                 <span className='section-name'>{section.name}</span>
-                //             </a>
-                //         </li>
-                //     )
-        //         })}
-        //     </ul>
-        // </nav>
         <Navbar fixed='top' bg='light' expand='lg'>
             <Container>
                 <Navbar.Brand href='#home' className='d-flex align-items-center'>
@@ -62,11 +46,14 @@ function Navy(props) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className='me-auto'>
-                        <Nav.Link href='#home'>Home</Nav.Link>
-                        <Nav.Link href='#about'>Link</Nav.Link>
-                        <Nav.Link href='#skills'>Skills</Nav.Link>
-                        <Nav.Link href='#projects'>Projects</Nav.Link>
-                        <Nav.Link href='#contact'>Contact</Nav.Link>
+                        {sections.map((section, i) => {
+                            return (
+                                <Nav.Link key={i} href={'#'+ section.name} className='d-flex align-items-center'>
+                                    <section.icon className='nav-icon'/>
+                                    <span>{section.name}</span>
+                                </Nav.Link>
+                            )
+                        })}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -74,4 +61,4 @@ function Navy(props) {
     );
 }
 
-export default Navy;
+export default CustomNav;
