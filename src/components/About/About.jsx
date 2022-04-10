@@ -1,6 +1,7 @@
 import './About.css';
 import Headshot from '../../images/pictures/headshot.jpg';
 
+
 function About(props) {
 
     return (
