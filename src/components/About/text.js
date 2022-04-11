@@ -17,7 +17,7 @@ const codingStory = new TextPair(
     [
         `
         I WAS BORED OF VLOOKUPS. I'm joking, but this isn't far from the truth. My journey with programming started from watching a few online tutorials on Excel VBA to automate some
-        manual processes at work while under lockdown. It was not soon after that I found myself fully obsessed with learning how to automate everything.
+        manual processes at work while under lockdown. It was not much longer after that I found myself fully obsessed with learning how to automate everything.
         `,
 
         `
