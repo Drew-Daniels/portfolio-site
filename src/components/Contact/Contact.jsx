@@ -18,7 +18,7 @@ function Contact(props) {
                     <span style={headerStyles}>Contact me</span>
                 </Card.Header>
                 <Card.Body>
-                    <Form>
+                    <Form method='POST' data-netlify='true'>
                         <Row>
                             <Col>
                                 <Form.Group className='mb-3' controlId='formBasicEmail'>
