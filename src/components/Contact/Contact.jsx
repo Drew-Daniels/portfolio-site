@@ -41,6 +41,26 @@ function Contact(props) {
                                     />
                                 </Form.Group>                        
                             </Col>
+                            <Col>
+                                <Form.Group className='mb-3' controlId='phone'>
+                                    <Form.Label visuallyHidden>Phone Number</Form.Label>
+                                    <Form.Control
+                                        name='phone'
+                                        type='tel'
+                                        placeholder='XXX-XXX-XXXX'
+                                    />
+                                </Form.Group>                        
+                            </Col>
+                            <Col>
+                                <Form.Group className='mb-3' controlId='email'>
+                                    <Form.Label visuallyHidden>Email</Form.Label>
+                                    <Form.Control
+                                        name='email'
+                                        type='email'
+                                        placeholder='youremail@here.com'
+                                    />
+                                </Form.Group>                        
+                            </Col>
                         </Row>
                         <Form.Group className='mb-3' controlId='message'>
                             <Form.Label visuallyHidden>Message</Form.Label>
