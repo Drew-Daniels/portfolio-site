@@ -41,8 +41,7 @@ function Projects(props) {
             CVProjectGif,
             [
                 'react',
-                'html',
-                'css',
+                'bootstrap',
                 'javascript',
                 'webpack',
             ],
@@ -89,6 +88,7 @@ function Projects(props) {
             'Battleship',
             BattleshipGif,
             [
+                'javascript',
                 'jest',
                 'webpack',
             ],
@@ -103,6 +103,7 @@ function Projects(props) {
             'Weather App', 
             WeatherAppGif,
             [
+                'javascript',
                 'webpack',
                 'openweathermap-api',
             ],
@@ -117,9 +118,9 @@ function Projects(props) {
             'Calculator',
             CalculatorGif,
             [
+                'javascript',
                 'html',
                 'css',
-                'javascript',
             ],
             [
                 'Calculator App',
@@ -130,10 +131,10 @@ function Projects(props) {
         new Project(
             'Tic Tac Toe',
             TicTacToeGif,
-            [
+            [  
+                'javascript',
                 'html',
                 'css',
-                'javascript',
             ],
             [
                 'Tic Tac Toe description here',
@@ -145,9 +146,9 @@ function Projects(props) {
             'Etch-a-Sketch',
             EtchASketchGif,
             [
+                'javascript',
                 'html',
                 'css',
-                'javascript',
             ],
             [
                 'Etch-a-Sketch description here',
