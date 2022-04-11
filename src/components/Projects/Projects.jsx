@@ -37,6 +37,41 @@ function Projects(props) {
 
     const [projects, setProjects] = useState([
         new Project(
+            'CV Application',
+            CVProjectGif,
+            [
+                'react',
+                'html',
+                'css',
+                'javascript',
+                'webpack',
+            ],
+            [
+                'Implemented React hooks to update state in response to user inputs.',
+                'Used git and GitHub Pages for continuous integration and deployment (CI/CD)'
+            ],
+            'https://drew-daniels.github.io/cv-project-hooks/',
+            'https://github.com/Drew-Daniels/cv-project-hooks',
+        ),
+        new Project(
+            'Todo App',
+            TodoTitanGif,
+            [
+                'webpack',
+                'eslint',
+                'html',
+                'css',
+                'javascript',
+                'localstorage-api',
+            ],
+            [
+                'Made use of LocalStorage API to store and retrieve user-specific projects, to-dos, and tasks created from the UI on the client-side - ensuring speed and scalability for users.',
+                'UI on the client-side - ensuring speed and scalability for users.'
+            ],
+            'https://drew-daniels.github.io/todo_titan/',
+            'https://github.com/Drew-Daniels/todo_titan',
+        ),
+        new Project(
             'Memory Card', 
             MemoryCardGif,
             [
@@ -65,18 +100,32 @@ function Projects(props) {
             'https://github.com/Drew-Daniels/battleship',
         ),
         new Project(
-            'Etch-a-Sketch',
-            EtchASketchGif,
+            'Weather App', 
+            WeatherAppGif,
+            [
+                'webpack',
+                'openweathermap-api',
+            ],
+            [
+                'Employed Webpack to dynamically generate JavaScript code used to fetch updated daily weather metrics for any city',
+                'JSON data obtained from the OpenWeather REST API and displayed in a sleek UI'
+            ],
+            'https://drew-daniels.github.io/weather_app/',
+            'https://github.com/Drew-Daniels/weather_app',
+        ),
+        new Project(
+            'Calculator',
+            CalculatorGif,
             [
                 'html',
                 'css',
                 'javascript',
             ],
             [
-                'Etch-a-Sketch description here',
+                'Calculator App',
             ],
-            'https://drew-daniels.github.io/etch-a-sketch/',
-            'https://github.com/Drew-Daniels/etch-a-sketch',
+            'https://drew-daniels.github.io/calculator/',
+            'https://github.com/Drew-Daniels/calculator',
         ),
         new Project(
             'Tic Tac Toe',
@@ -93,67 +142,18 @@ function Projects(props) {
             'https://github.com/Drew-Daniels/tic-tac-toe',
         ),
         new Project(
-            'Todo App',
-            TodoTitanGif,
-            [
-                'webpack',
-                'eslint',
-                'html',
-                'css',
-                'javascript',
-                'localstorage-api',
-            ],
-            [
-                'Made use of LocalStorage API to store and retrieve user-specific projects, to-dos, and tasks created from the UI on the client-side - ensuring speed and scalability for users.',
-                'UI on the client-side - ensuring speed and scalability for users.'
-            ],
-            'https://drew-daniels.github.io/todo_titan/',
-            'https://github.com/Drew-Daniels/todo_titan',
-        ),
-        new Project(
-            'Weather App', 
-            WeatherAppGif,
-            [
-                'webpack',
-                'openweathermap-api',
-            ],
-            [
-                'Employed Webpack to dynamically generate JavaScript code used to fetch updated daily weather metrics for any city',
-                'JSON data obtained from the OpenWeather REST API and displayed in a sleek UI'
-            ],
-            'https://drew-daniels.github.io/weather_app/',
-            'https://github.com/Drew-Daniels/weather_app',
-        ),
-        new Project(
-            'CV Application',
-            CVProjectGif,
-            [
-                'react',
-                'html',
-                'css',
-                'javascript',
-                'webpack',
-            ],
-            [
-                'Implemented React hooks to update state in response to user inputs.',
-                'Used git and GitHub Pages for continuous integration and deployment (CI/CD)'
-            ],
-            'https://drew-daniels.github.io/cv-project-hooks/',
-            'https://github.com/Drew-Daniels/cv-project-hooks',
-        ),
-        new Project(
-            'Calculator',
-            CalculatorGif,
+            'Etch-a-Sketch',
+            EtchASketchGif,
             [
                 'html',
                 'css',
                 'javascript',
             ],
             [
-                'Calculator App',
+                'Etch-a-Sketch description here',
             ],
-            'https://drew-daniels.github.io/calculator/',
-            'https://github.com/Drew-Daniels/calculator',
+            'https://drew-daniels.github.io/etch-a-sketch/',
+            'https://github.com/Drew-Daniels/etch-a-sketch',
         ),
     ])
 
