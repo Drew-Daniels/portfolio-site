@@ -28,6 +28,7 @@ function Contact(props) {
                                         name='firstName'
                                         type='text' 
                                         placeholder='First name'
+                                        required
                                     />
                                 </Form.Group>
                             </Col>
@@ -38,6 +39,7 @@ function Contact(props) {
                                         name='lastName'
                                         type='text'
                                         placeholder='Last name'
+                                        required
                                     />
                                 </Form.Group>                        
                             </Col>
@@ -48,6 +50,7 @@ function Contact(props) {
                                         name='phone'
                                         type='tel'
                                         placeholder='XXX-XXX-XXXX'
+                                        required
                                     />
                                 </Form.Group>                        
                             </Col>
@@ -58,6 +61,7 @@ function Contact(props) {
                                         name='email'
                                         type='email'
                                         placeholder='youremail@here.com'
+                                        required
                                     />
                                 </Form.Group>                        
                             </Col>
