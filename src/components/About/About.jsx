@@ -1,7 +1,7 @@
 import './About.css';
 import Headshot from '../../images/pictures/headshot.jpg';
 import { Container, Card, Image } from 'react-bootstrap';
-import { sections } from './text';
+import {sections} from './text';
 
 function About(props) {
 

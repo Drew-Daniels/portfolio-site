@@ -54,6 +54,6 @@ const sections = [
     outro,
 ]
 
-module.exports = {
-    sections
+export {
+    sections,
 }
