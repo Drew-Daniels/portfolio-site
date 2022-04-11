@@ -21,21 +21,35 @@ function Contact(props) {
                     <Form method='POST' data-netlify='true'>
                         <Row>
                             <Col>
-                                <Form.Group className='mb-3' controlId='formBasicEmail'>
+                                <Form.Group className='mb-3' controlId='first-name'>
                                     <Form.Label visuallyHidden>First Name</Form.Label>
-                                    <Form.Control type='text' placeholder='First name' />
+                                    <Form.Control 
+                                        name='firstName'
+                                        type='text' 
+                                        placeholder='First name'
+                                    />
                                 </Form.Group>
                             </Col>
                             <Col>
-                                <Form.Group className='mb-3' controlId='formBasicEmail'>
+                                <Form.Group className='mb-3' controlId='last-name'>
                                     <Form.Label visuallyHidden>Last Name</Form.Label>
-                                    <Form.Control type='text' placeholder='Last name' />
+                                    <Form.Control
+                                        name='lastName'
+                                        type='text'
+                                        placeholder='Last name'
+                                    />
                                 </Form.Group>                        
                             </Col>
                         </Row>
-                        <Form.Group className='mb-3' controlId='formBasicEmail'>
+                        <Form.Group className='mb-3' controlId='message'>
                             <Form.Label visuallyHidden>Message</Form.Label>
-                            <Form.Control type='text' as='textarea' rows={3} placeholder='Type message' />
+                            <Form.Control 
+                                name='message'
+                                type='text' 
+                                as='textarea' 
+                                rows={3} 
+                                placeholder='Type message'
+                            />
                         </Form.Group>
                         <Button variant='warning' type='submit'>
                             <span>Send</span>
