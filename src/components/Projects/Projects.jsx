@@ -14,6 +14,10 @@ import WeatherAppGif from '../../images/gifs/weather-app.gif';
 import CVProjectGif from '../../images/gifs/cv-project.gif';
 import CalculatorGif from '../../images/gifs/calculator.gif';
 
+import { IconContext } from 'react-icons';
+import { GoLinkExternal as LiveIcon } from 'react-icons/go';
+import { BsGithub as GithubIcon } from 'react-icons/bs';
+
 import { Container, Card, Badge, Button } from 'react-bootstrap';
 
 function Projects(props) {
@@ -161,7 +165,9 @@ function Projects(props) {
         <Container id='projects'>
             <Card>
                 <Card.Header as='h2'>
-                    {icon()}
+                    <IconContext.Provider value={{ color: 'orange' }}>
+                        {icon()}
+                    </IconContext.Provider>
                     <span style={headerStyles}>Projects</span>
                 </Card.Header>
                 <Card.Body>
@@ -172,9 +178,9 @@ function Projects(props) {
                                     <Card>
                                         <Card.Header as='h3' className='project-header'>{project.name}</Card.Header>
                                         <Card.Body>
-                                            <ul>
+                                            <ul className='project-blurbs'>
                                                 {project.blurbs.map((blurb, i) => {
-                                                        return (<li key={i}><Card.Text>{blurb}</Card.Text></li>)
+                                                        return (<li key={i} className='project-blurb'><Card.Text>{blurb}</Card.Text></li>)
                                                 })}
                                             </ul>
                                             <ul>
@@ -184,10 +190,14 @@ function Projects(props) {
                                             </ul>
                                             <Card.Img src={project.gif} alt={project.name + ' gif'} className='project-gif' />
                                             <Button variant='link' href={project.liveURL} target='_blank'>
-                                                <span>live</span>
+                                                <IconContext.Provider value={{ color: '#ffad41', size:'1.5em'}} >
+                                                    <LiveIcon />
+                                                </IconContext.Provider>
                                             </Button>
                                             <Button variant='link' href={project.sourceURL} target='_blank'>
-                                                <span>source code</span>
+                                                <IconContext.Provider value={{ color: '#ffad41', size:'1.5em'}} >
+                                                    <GithubIcon />
+                                                </IconContext.Provider>
                                             </Button>
                                         </Card.Body>
                                     </Card>

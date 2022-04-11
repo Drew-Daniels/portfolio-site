@@ -1,5 +1,6 @@
 import './Contact.css';
 import { Container, Card, Form, Row, Col, Button } from 'react-bootstrap';
+import {IconContext} from 'react-icons';
 import { IoIosSend as SendIcon} from 'react-icons/io';
 
 function Contact(props) {
@@ -14,7 +15,9 @@ function Contact(props) {
         <Container id='contact'>
             <Card>
                 <Card.Header as='h2'>
-                    {icon()}
+                    <IconContext.Provider value={{ color: 'orange' }}>
+                        {icon()}
+                    </IconContext.Provider>
                     <span style={headerStyles}>Contact me</span>
                 </Card.Header>
                 <Card.Body>

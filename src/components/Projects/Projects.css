@@ -11,3 +11,9 @@
 .project-gif {
     padding: 1em 0;
 }
+.project-blurbs {
+    margin-bottom: 1em;
+}
+.project-blurb {
+    list-style: circle;
+}

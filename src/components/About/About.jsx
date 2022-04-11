@@ -1,6 +1,7 @@
 import './About.css';
 import Headshot from '../../images/pictures/headshot.jpg';
 import { Container, Card, Image } from 'react-bootstrap';
+import { sections } from './text';
 
 function About(props) {
 
@@ -17,10 +18,18 @@ function About(props) {
                     <span>About me</span>
                 </Card.Header>
                 <Card.Body>
-                    <Card.Title>Section 1</Card.Title>
-                    <Card.Text>blahhhhh</Card.Text>
-                    <Card.Title>Section 2</Card.Title>
-                    <Card.Text>Blahhhh</Card.Text>
+                    {sections.map((section, i) => {
+                        return (
+                            <div key={i} className='card-section'>
+                                <Card.Title>{section.title}</Card.Title>
+                                {section.paragraphs.map((paragraph, i) => {
+                                    return (
+                                        <Card.Text key={i}>{paragraph}</Card.Text>
+                                    )
+                                })}
+                            </div>
+                        )
+                    })}
                 </Card.Body>
             </Card>
         </Container>

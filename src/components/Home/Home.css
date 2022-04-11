@@ -13,16 +13,19 @@
 }
 .home-header {
     font-size: 3em;
-    color: #ffad41;
     font-weight: 100;
     text-align: center;
+}
+.code {
+    color: #ffad41;
+    font-size: 5em;
 }
 #home {
 	background-image: url('../../images/pictures/home-background.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	height: 50em;
+	height: 20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
