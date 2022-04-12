@@ -46,6 +46,8 @@ function Contact(props) {
                                     />
                                 </Form.Group>                        
                             </Col>
+                        </Row>
+                        <Row>
                             <Col>
                                 <Form.Group className='mb-3' controlId='phone'>
                                     <Form.Label visuallyHidden>Phone Number</Form.Label>

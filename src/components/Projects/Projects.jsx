@@ -18,7 +18,7 @@ import { IconContext } from 'react-icons';
 import { GoLinkExternal as LiveIcon } from 'react-icons/go';
 import { BsGithub as GithubIcon } from 'react-icons/bs';
 
-import { Container, Card, Badge, Button } from 'react-bootstrap';
+import { Container, Card, Badge, ButtonGroup, Button } from 'react-bootstrap';
 
 function Projects(props) {
 
@@ -40,10 +40,11 @@ function Projects(props) {
             'CV Application',
             CVProjectGif,
             [
-                'react',
-                'bootstrap',
-                'javascript',
-                'webpack',
+                'React',
+                'React-bootstrap',
+                'Bootstrap',
+                'JavaScript',
+                'Webpack',
             ],
             [
                 'Implemented React hooks to update state in response to user inputs.',
@@ -56,56 +57,26 @@ function Projects(props) {
             'Todo App',
             TodoTitanGif,
             [
-                'webpack',
-                'eslint',
-                'html',
-                'css',
-                'javascript',
-                'localstorage-api',
+                'JavaScript',
+                'LocalStorage API',
+                'Webpack',
+                'Eslint',
+                'HTML',
+                'CSS',
             ],
             [
                 'Made use of LocalStorage API to store and retrieve user-specific projects, to-dos, and tasks created from the UI on the client-side - ensuring speed and scalability for users.',
-                'UI on the client-side - ensuring speed and scalability for users.'
             ],
             'https://drew-daniels.github.io/todo_titan/',
             'https://github.com/Drew-Daniels/todo_titan',
         ),
         new Project(
-            'Memory Card', 
-            MemoryCardGif,
-            [
-                'react', 
-                'javascript',
-                'html'
-            ],
-            [
-                'Memory Card game created with React',
-            ],
-            'https://drew-daniels.github.io/memory-card/',
-            'https://github.com/Drew-Daniels/memory-card',
-        ),
-        new Project(
-            'Battleship',
-            BattleshipGif,
-            [
-                'javascript',
-                'jest',
-                'webpack',
-            ],
-            [   
-                'Utilized CSS media queries to create a responsive battleship application.',
-                'Created automated unit tests with the Jest framework to generate mockup scenarios and follow test-driven development and feature validation principles.',
-            ],
-            'https://drew-daniels.github.io/battleship/',
-            'https://github.com/Drew-Daniels/battleship',
-        ),
-        new Project(
             'Weather App', 
             WeatherAppGif,
             [
-                'javascript',
-                'webpack',
-                'openweathermap-api',
+                'JavaScript',
+                'Webpack',
+                'OpenWeatherMap API',
             ],
             [
                 'Employed Webpack to dynamically generate JavaScript code used to fetch updated daily weather metrics for any city',
@@ -115,12 +86,42 @@ function Projects(props) {
             'https://github.com/Drew-Daniels/weather_app',
         ),
         new Project(
+            'Battleship',
+            BattleshipGif,
+            [
+                'JavaScript',
+                'Jest',
+                'Webpack',
+                'HTML',
+                'CSS'
+            ],
+            [   
+                'Utilized CSS media queries to create a responsive battleship application.',
+                'Created automated unit tests with the Jest framework to generate mockup scenarios and follow test-driven development and feature validation principles.',
+            ],
+            'https://drew-daniels.github.io/battleship/',
+            'https://github.com/Drew-Daniels/battleship',
+        ),
+        new Project(
+            'Memory Card', 
+            MemoryCardGif,
+            [
+                'React hooks', 
+                'JavaScript',
+            ],
+            [
+                'Memory card game created with React',
+            ],
+            'https://drew-daniels.github.io/memory-card/',
+            'https://github.com/Drew-Daniels/memory-card',
+        ),
+        new Project(
             'Calculator',
             CalculatorGif,
             [
-                'javascript',
-                'html',
-                'css',
+                'JavaScript',
+                'HTML',
+                'CSS',
             ],
             [
                 'Calculator App',
@@ -132,12 +133,12 @@ function Projects(props) {
             'Tic Tac Toe',
             TicTacToeGif,
             [  
-                'javascript',
-                'html',
-                'css',
+                'JavaScript',
+                'HTML',
+                'CSS',
             ],
             [
-                'Tic Tac Toe description here',
+                'Tic Tac Toe App',
             ],
             'https://drew-daniels.github.io/tic-tac-toe/',
             'https://github.com/Drew-Daniels/tic-tac-toe',
@@ -146,12 +147,12 @@ function Projects(props) {
             'Etch-a-Sketch',
             EtchASketchGif,
             [
-                'javascript',
-                'html',
-                'css',
+                'JavaScript',
+                'HTML',
+                'CSS',
             ],
             [
-                'Etch-a-Sketch description here',
+                'Etch-a-Sketch App',
             ],
             'https://drew-daniels.github.io/etch-a-sketch/',
             'https://github.com/Drew-Daniels/etch-a-sketch',
@@ -177,29 +178,34 @@ function Projects(props) {
                             return (
                                 <li key={i} className='project'>
                                     <Card>
-                                        <Card.Header as='h3' className='project-header'>{project.name}</Card.Header>
+                                        <Card.Header as='h3' className='project-header'>
+                                            {project.name}
+                                            <ButtonGroup>
+                                                <Button variant='link' href={project.liveURL} target='_blank'>
+                                                    <IconContext.Provider value={{ color: '#ffad41', size:'1.5em'}} >
+                                                        <LiveIcon />
+                                                    </IconContext.Provider>
+                                                </Button>
+                                                <Button variant='link' href={project.sourceURL} target='_blank'>
+                                                    <IconContext.Provider value={{ color: '#ffad41', size:'1.5em'}} >
+                                                        <GithubIcon />
+                                                    </IconContext.Provider>
+                                                </Button>
+                                            </ButtonGroup>
+                                        </Card.Header>
                                         <Card.Body>
                                             <ul className='project-blurbs'>
                                                 {project.blurbs.map((blurb, i) => {
                                                         return (<li key={i} className='project-blurb'><Card.Text>{blurb}</Card.Text></li>)
                                                 })}
                                             </ul>
-                                            <ul>
+                                            <ul className='tech-stack'>
                                                 {project.techStack.map((stackItem, i) => {
-                                                    return (<li key={i}><Badge pill bg='warning'>{stackItem}</Badge></li>)
+                                                    return (<li key={i} style={{ paddingRight: '.25em' }} ><Badge pill bg='warning'>{stackItem}</Badge></li>)
                                                 })}
                                             </ul>
                                             <Card.Img src={project.gif} alt={project.name + ' gif'} className='project-gif' />
-                                            <Button variant='link' href={project.liveURL} target='_blank'>
-                                                <IconContext.Provider value={{ color: '#ffad41', size:'1.5em'}} >
-                                                    <LiveIcon />
-                                                </IconContext.Provider>
-                                            </Button>
-                                            <Button variant='link' href={project.sourceURL} target='_blank'>
-                                                <IconContext.Provider value={{ color: '#ffad41', size:'1.5em'}} >
-                                                    <GithubIcon />
-                                                </IconContext.Provider>
-                                            </Button>
+
                                         </Card.Body>
                                     </Card>
                                 </li>
