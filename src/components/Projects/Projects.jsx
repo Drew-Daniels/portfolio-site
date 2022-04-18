@@ -5,6 +5,7 @@ import { useState } from 'react';
 import './Projects.css';
 
 // gifs
+import W2WWallpapersGif from '../../images/gifs/w2w-wallpapers.gif';
 import MemoryCardGif from '../../images/gifs/memory-card-app.gif';
 import BattleshipGif from '../../images/gifs/battleship.gif';
 import EtchASketchGif from '../../images/gifs/etch-a-sketch.gif';
@@ -36,6 +37,24 @@ function Projects(props) {
     }
 
     const [projects, setProjects] = useState([
+        new Project(
+            'Wall-to-Wall Wallpapers E-Commerce Site',
+            W2WWallpapersGif,
+            [
+                'React',
+                'React-router-dom',
+                'React-bootstrap',
+                'Bootstrap',
+                'JavaScript',
+                'Webpack'
+            ],
+            [
+                'Utilized react-router-dom to handle URL navigation launched by user-interaction with the store-front UI.',
+                'Used React hooks to maintain and update application and component state.'
+            ],
+            'https://drew-daniels.github.io/w2w-wallpapers/',
+            'https://github.com/Drew-Daniels/w2w-wallpapers',
+        ),
         new Project(
             'CV Application',
             CVProjectGif,
