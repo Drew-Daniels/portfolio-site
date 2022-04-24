@@ -49,8 +49,9 @@ function Projects(props) {
                 'Webpack'
             ],
             [
-                'Utilized react-router-dom to handle URL navigation launched by user-interaction with the store-front UI.',
-                'Used React hooks to maintain and update application and component state.'
+                'An E-commerce app that uses React hooks to allow users to add/remove shop items to and from their cart.',
+                'Makes use of React Router used for client-side routing.',
+                'Applied Bootstrap styling to create a sleek UI.',
             ],
             'https://drew-daniels.github.io/w2w-wallpapers/',
             'https://github.com/Drew-Daniels/w2w-wallpapers',
@@ -66,8 +67,7 @@ function Projects(props) {
                 'Webpack',
             ],
             [
-                'Implemented React hooks to update state in response to user inputs.',
-                'Used git and GitHub Pages for continuous integration and deployment (CI/CD)'
+                'An application generator that collects user input for general info, professional and educational experience, and skills through forms and uses React hooks to transform this input into a live preview & printable resume.'
             ],
             'https://drew-daniels.github.io/cv-project-hooks/',
             'https://github.com/Drew-Daniels/cv-project-hooks',
@@ -84,7 +84,7 @@ function Projects(props) {
                 'CSS',
             ],
             [
-                'Made use of LocalStorage API to store and retrieve user-specific projects, to-dos, and tasks created from the UI on the client-side - ensuring speed and scalability for users.',
+                'A to-do app that provides users with the ability to create and save projects, to-dos, and tasks created in the UI to their browser cache using the LocalStorage API and retrieve on later sessions.',
             ],
             'https://drew-daniels.github.io/todo_titan/',
             'https://github.com/Drew-Daniels/todo_titan',
@@ -98,8 +98,8 @@ function Projects(props) {
                 'OpenWeatherMap API',
             ],
             [
-                'Employed Webpack to dynamically generate JavaScript code used to fetch updated daily weather metrics for any city',
-                'JSON data obtained from the OpenWeather REST API and displayed in a sleek UI'
+                'Employed JavaScript and Webpack to dynamically create HTML code to display updated daily weather metrics for any city.',
+                'Fetches weather data in JSON format from the OpenWeather REST API.'
             ],
             'https://drew-daniels.github.io/weather_app/',
             'https://github.com/Drew-Daniels/weather_app',
@@ -115,8 +115,9 @@ function Projects(props) {
                 'CSS'
             ],
             [   
-                'Utilized CSS media queries to create a responsive battleship application.',
-                'Created automated unit tests with the Jest framework to generate mockup scenarios and follow test-driven development and feature validation principles.',
+                'A battleship game that gives players the ability to drag and drop their ships onto their board through the HTML5 Drag and Drop API.',
+                "Players can attack their opponent by clicking on any tile on their opponent's board.",
+                'Used the Jest framework to create unit-tests, following test-driven development and feature validation principles.',
             ],
             'https://drew-daniels.github.io/battleship/',
             'https://github.com/Drew-Daniels/battleship',
@@ -129,7 +130,8 @@ function Projects(props) {
                 'JavaScript',
             ],
             [
-                'Memory card game created with React',
+                "A memory game that tests users' ability to recall what cards they have already clicked",
+                "React is used to track which cards have been clicked, update the current score for the user, and shuffle the cards.",
             ],
             'https://drew-daniels.github.io/memory-card/',
             'https://github.com/Drew-Daniels/memory-card',
@@ -143,7 +145,9 @@ function Projects(props) {
                 'CSS',
             ],
             [
-                'Calculator App',
+                'Web app calculator that supports addition, subtraction, multiplication, and division operations.',
+                'Calculations are performed through parsing user input via regular expressions and evaluating the result.',
+                'Responds to user mouse clicks and keyboard events through DOM event-listeners.'
             ],
             'https://drew-daniels.github.io/calculator/',
             'https://github.com/Drew-Daniels/calculator',
@@ -157,7 +161,7 @@ function Projects(props) {
                 'CSS',
             ],
             [
-                'Tic Tac Toe App',
+                'Tic Tac Toe App that gives players the option to play against an AI or another human, tracking the score and announcing the winner of each game',
             ],
             'https://drew-daniels.github.io/tic-tac-toe/',
             'https://github.com/Drew-Daniels/tic-tac-toe',
@@ -171,7 +175,8 @@ function Projects(props) {
                 'CSS',
             ],
             [
-                'Etch-a-Sketch App',
+                'Etch-a-Sketch App that provides users with the ability shade tiles through mouse-hover events.',
+                'Uses a popup form to prompt the user to enter how many tiles they would like their etch-a-sketch container to display',
             ],
             'https://drew-daniels.github.io/etch-a-sketch/',
             'https://github.com/Drew-Daniels/etch-a-sketch',
