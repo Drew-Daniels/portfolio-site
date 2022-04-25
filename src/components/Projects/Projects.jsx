@@ -49,9 +49,8 @@ function Projects(props) {
                 'Webpack'
             ],
             [
-                'An E-commerce app that uses React hooks to allow users to add/remove shop items to and from their cart.',
-                'Makes use of React Router used for client-side routing.',
-                'Applied Bootstrap styling to create a sleek UI.',
+                'An E-commerce app that allows users to add/remove shop items to and from their cart, and adjust quantities as necessary.',
+                'Applied React Router for client-side URL routing, React hooks to maintain and update state, and Bootstrap styling to create a sleek UI.',
             ],
             'https://drew-daniels.github.io/w2w-wallpapers/',
             'https://github.com/Drew-Daniels/w2w-wallpapers',
@@ -67,10 +66,25 @@ function Projects(props) {
                 'Webpack',
             ],
             [
-                'An application generator that collects user input for general info, professional and educational experience, and skills through forms and uses React hooks to transform this input into a live preview & printable resume.'
+                'A web app that collects user input for general info, professional and educational experience, and skills through forms, and generates a live preview & printable resume.'
             ],
             'https://drew-daniels.github.io/cv-project-hooks/',
             'https://github.com/Drew-Daniels/cv-project-hooks',
+        ),
+        new Project(
+            'Weather App', 
+            WeatherAppGif,
+            [
+                'JavaScript',
+                'Webpack',
+                'OpenWeatherMap API',
+            ],
+            [
+                'Weather app that displays a 7-day forecast for any city available through the OpenWeather REST API.',
+                'Employed JavaScript to convert JSON API responses into JavaScript, Webpack to dynamically create HTML code, and CSS animations and media breakpoints to make the application reactive.'
+            ],
+            'https://drew-daniels.github.io/weather_app/',
+            'https://github.com/Drew-Daniels/weather_app',
         ),
         new Project(
             'Todo App',
@@ -84,25 +98,11 @@ function Projects(props) {
                 'CSS',
             ],
             [
-                'A to-do app that provides users with the ability to create and save projects, to-dos, and tasks created in the UI to their browser cache using the LocalStorage API and retrieve on later sessions.',
+                'A to-do app that provides users with the ability to create and save projects, to-dos, and tasks through a UI created without the assistance of CSS frameworks such as Bootstrap or MUI.',
+                "Uses the LocalStorage API to store all data on the client's browser cache and retrieve on later sessions.",
             ],
             'https://drew-daniels.github.io/todo_titan/',
             'https://github.com/Drew-Daniels/todo_titan',
-        ),
-        new Project(
-            'Weather App', 
-            WeatherAppGif,
-            [
-                'JavaScript',
-                'Webpack',
-                'OpenWeatherMap API',
-            ],
-            [
-                'Employed JavaScript and Webpack to dynamically create HTML code to display updated daily weather metrics for any city.',
-                'Fetches weather data in JSON format from the OpenWeather REST API.'
-            ],
-            'https://drew-daniels.github.io/weather_app/',
-            'https://github.com/Drew-Daniels/weather_app',
         ),
         new Project(
             'Battleship',
