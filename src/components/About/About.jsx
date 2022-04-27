@@ -27,12 +27,7 @@ function About(props) {
                     <Card.Text>
                             My journey with programming started while under lockdown - namely watching a few online tutorials on Excel VBA to automate some
                             manual processes at my work as a supply chain data analyst. It was not much longer after that I found myself obsessed with learning how to automate everything.
-                    </Card.Text>
-                    <Card.Text>
-                            After impressing my coworkers with my computer wizardry, I decided to move onto Python to <strong>really</strong> learn programming. 
-                            However, after reading and watching many books {"&"} tutorials on Python and playing around with a couple Raspberry Pis, 
-                            I felt I needed a more rigorous path in place if I really wanted to transition from Supply Chain Management to Software Development.                   
-                    </Card.Text>                            
+                    </Card.Text>                    
                     <Card.Text>
                         In July 2021 I found <a href='https://www.theodinproject.com/' target='_blank' rel='noreferrer'>The Odin Project</a> - a free, online and open-source course software development curriculum, where, once completed, you should have the skills necessary to be hired as a professional full stack developer.
                             Most of the projects you'll find here at the moment are from this course, and I intend to keep adding more as they are completed. 
