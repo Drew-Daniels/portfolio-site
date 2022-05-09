@@ -50,9 +50,9 @@ function Projects(props) {
                 'Bootstrap',
             ],
             [
-                "A Where's Waldo-style photo tagging app where users can choose between two distinct maps and try to find all the required characters to see their record on the leaderboards.",
-                'Utilized Firebase Storage for storing images, Firebase Firestore for persisting character locations and game records, and the Firebase Emulator Suite to minimize actual read/writes against the production database.',
-                'Used Jest testing library to incrementally develop features.'
+                "A Where's Waldo-style photo tagging app where users can choose between two distinct images and try to find all the required characters in record time - if their win is within the top 10 they can see their score on the leaderboards.",
+                'Utilized Firebase Storage for storing images, Firebase Firestore for persisting character locations and game data, and the Firebase Emulator Suite to minimize actual read/writes against the production database during development.',
+                'Used Jest testing library to incrementally test and develop features.'
             ],
             'https://drew-daniels-wheres-waldo.web.app/',
             'https://github.com/Drew-Daniels/ww',
