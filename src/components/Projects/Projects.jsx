@@ -5,6 +5,7 @@ import { useState } from 'react';
 import './Projects.css';
 
 // gifs
+import WWGif from '../../images/gifs/ww.gif';
 import W2WWallpapersGif from '../../images/gifs/w2w-wallpapers.gif';
 import MemoryCardGif from '../../images/gifs/memory-card-app.gif';
 import BattleshipGif from '../../images/gifs/battleship.gif';
@@ -38,12 +39,30 @@ function Projects(props) {
 
     const [projects, setProjects] = useState([
         new Project(
+            "Where's Waldo Photo-Tagging Game",
+            WWGif,
+            [
+                'Firebase Firestore',
+                'Firebase Storage',
+                'Firebase Emulator',
+                'React',
+                'React Router',
+                'Bootstrap',
+            ],
+            [
+                "A Where's Waldo-style photo tagging app where users can choose between two distinct maps and try to find all the required characters to see their record on the leaderboards.",
+                'Utilized Firebase Storage for storing images, Firebase Firestore for persisting character locations and game records, and the Firebase Emulator Suite to minimize actual read/writes against the production database.',
+                'Used Jest testing library to incrementally develop features.'
+            ],
+            'https://drew-daniels-wheres-waldo.web.app/',
+            'https://github.com/Drew-Daniels/ww',
+        ),
+        new Project(
             'Wall-to-Wall Wallpapers E-Commerce Site',
             W2WWallpapersGif,
             [
                 'React',
-                'React-router-dom',
-                'React-bootstrap',
+                'React Router',
                 'Bootstrap',
                 'JavaScript',
                 'Webpack'
